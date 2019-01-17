@@ -5,7 +5,7 @@ import time
 import paramiko
 import datetime
 # This will connect to the SQLite database file provided on github.
-# The database itself is nothing special; a new one may be created with the following SQL command: CREATE TABLE int_conn_counts (device_name,interface,connected_count) 
+# The database itself is nothing special; a new one may be created with the following SQL command: CREATE TABLE int_conn_counts (device_name,interface, connected_count, last_conn_date, UNIQUE(device_name,interface))
 # You can change this to a custom folder location; be aware that slashes (\) need to be escaped with another slash (\\).
 # Example C:\\users\\Administrator\\Desktop\\int_conn_counts.db
 conn = sqlite3.connect('int_conn_counts.db')
