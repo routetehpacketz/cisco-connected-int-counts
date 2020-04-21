@@ -12,9 +12,12 @@ This script is intended to be run as a scheduled task on an interval you see fit
 
 #### Requirements
 
--Python 3.x (it could work in 2.7 but I don't write code in Python2)
+-Python 3.x
+
 -Python library paramiko
+
 -SSH access to your Cisco switches
+
 -A single username and password with access to all devices in your devices.csv file
 
 #### Instructions
@@ -37,4 +40,6 @@ To access the data within the .db file, I recommend using <a href="https://sqlit
 
 #### To Do:
 
-1) Combine these scripts into one .py file
+1) Combine these scripts into one file
+
+2) Convert to netmiko
